@@ -1,0 +1,99 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: auto;
+    scroll-behavior: smooth ;
+}
+ul li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+body{
+    background: url(https://static.vecteezy.com/system/resources/previews/004/968/002/original/cute-abstract-modern-background-free-vector.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.header_text{
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    margin-top: 20px;
+    height: 1230px;
+    text-align: center;
+}
+.line1{
+    display: flex;
+    width: 1100px;
+}
+.line2{
+    padding-top: 20px;
+    display: flex;
+    width: 1100px;
+}
+.line3{
+    display: flex;
+    width: 1100px;
+    padding-top: 20px;
+}
+.item{
+    width: 300px;
+    height: 300px;
+    margin-top: 50px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+.item:hover .item_text{
+    bottom: 0px;
+}
+
+
+.item_image{
+    width: 100%;
+    height: 100%;
+}
+
+.item_text{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgb(0, 0, 0, 0.9);
+    bottom: 300px;
+    transition: 0.5s ease-in-out;
+    font-size: 30px;
+    color:white ;
+    padding-top: 120px;
+    font-family: 'Lato', sans-serif;
+}
+
+
+
+button{
+    margin-top: 70px;
+    padding: 13px 33px;
+    cursor: pointer;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    text-transform: uppercase;
+    transition: 0.5s;
+    border: solid 2px red;
+}
+button:hover{
+    background-color: red;
+    color: white;
+    border: solid 2px white;
+}

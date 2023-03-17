@@ -1,0 +1,206 @@
+* {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    margin: auto;
+    /* scroll-behavior: smooth ;
+    top: 0; */
+}
+ul li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+
+
+
+
+.header{
+    height: 40px;
+    position: sticky;
+    background-color:  transparent;
+    display: flex;
+    justify-content: space-between;
+    background-color: #000000;
+}
+.header-nav{
+    display: flex;
+    width: 400px;
+    margin-left: -25px;
+}
+
+.header-navitem{
+    position: relative;
+    padding-bottom: 3px;
+}
+.header-navitem--link{
+    font-size: 15px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+.header-navitem::after{
+    content: '';
+    height: 2px;
+    width: 0%;
+    background: #29f1dd;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transition: 0.5s;
+}
+.header-navitem:hover:after{
+    width: 100%;
+}
+.header__logo{
+    width: 80px;
+    height: 40px;
+    margin-left: 10px;
+}
+
+
+
+
+.container{
+    background: url(https://thumbs.dreamstime.com/b/happy-dog-his-owner-young-man-embracing-labrador-retriever-back-yard-house-149780753.jpg);
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+    padding-bottom: 117px;
+    height: 600px;
+    top: 0;
+}
+.container-img{
+    width: 100%;
+}
+.results{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-top: 50px;
+}
+.result{
+    display: flex;
+    background-color: transparent;
+    height: 400px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 30px;
+    box-shadow:0px 0px 10px white,0px 0px 20px #fffa65;
+    background-color: #fffa65;
+}
+.result img{
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+button{
+    /* margin-top: 15px; */
+    padding: 10px 50px;
+    background-color:#e55039 ;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+button:hover{
+    background-color: #fab1a0;
+}
+
+
+
+
+
+/* body-contact with */
+.contact{
+    width: 100%;
+    height: 300px;
+    color: white;
+    background-color: rgb(20, 20, 20);
+}
+.contact__image{
+    width: 100%;
+    height: 100%;
+}
+.contact__content{
+    height: 300px;
+}
+.contact__title{
+    padding-top: 35px;
+    font-size: 35px;
+    text-align: center;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contact__box___little{
+    font-size: 20px;
+    padding-bottom : 5px;
+}
+.contact__box___text{
+    cursor: pointer;
+    color: #808e9b;
+    padding-bottom: 3px;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.contact__box___text:hover{
+    color: whitesmoke;
+    transition: 0.5s;
+}
+.box{
+    padding-top: 25px;
+    width: 1000px;
+    display: flex;
+}
+.contact-link{
+    text-align: center;
+    width: 500px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+i{
+    border: solid 0.1px #000000;
+    border-radius: 50px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+}
+i:hover{
+    border: solid 0.1px #fffa65;
+    box-shadow:0px 0px 10px white,0px 0px 20px #fffa65;
+}
+
+
+
+
+/* footer */
+.footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+}
+.footer-text{
+    color: white;
+    font-style: italic;
+    font-family: 'Josefin Sans', sans-serif;
+}
+.button-sigout{
+    padding: 7px 10px;
+    background-color: transparent;
+    border: solid 2px red;
+    background-color: red;
+    cursor: pointer;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 20px;
+}
+.button-sigout:hover{
+    border: solid 2px white;
+    background-color: white;
+    color: red;
+}
